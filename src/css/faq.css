@@ -15,20 +15,6 @@
 .faq-item {
   position: relative;
   padding: 20px 0;
-}
-
-.faq-item:not(:last-child)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: rgba(250, 250, 250, 0.2);
-}
-
-.faq-item.last-item {
-  position: relative;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
@@ -107,19 +93,24 @@
   .faq-container {
     max-width: 1439px;
   }
+
   .faq-question {
     max-width: 574px;
   }
-  .faq-item.last-item .faq-question {
-    max-width: 485px;
-  }
+
   .faq-item {
     padding: 32px 0;
   }
+
+  .faq-item.last-item .faq-question {
+    max-width: 485px;
+  }
+
   .toggle-btn {
     width: 40px;
     height: 40px;
   }
+
   .faq-answer {
     max-width: 656px;
   }
@@ -148,41 +139,38 @@
     background-color: rgba(250, 250, 250, 0.2);
   }
 
+  .faq-item {
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
   .faq-item:nth-child(1) {
     grid-area: item1;
-    border-left: none;
     padding-right: 32px;
   }
 
   .faq-item:nth-child(2) {
     grid-area: item2;
-    border-left: none;
     padding-right: 32px;
   }
 
   .faq-item:nth-child(3) {
     grid-area: item3;
-    border-left: none;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     padding-right: 32px;
   }
 
   .faq-item:nth-child(4) {
     grid-area: item4;
-    border-right: none;
     padding-left: 32px;
   }
 
   .faq-item:nth-child(5) {
     grid-area: item5;
-    border-right: none;
     padding-left: 32px;
   }
 
   .faq-item:nth-child(6) {
     grid-area: item6;
-    border-right: none;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     padding-left: 32px;
   }
 }
